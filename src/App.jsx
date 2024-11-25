@@ -34,8 +34,20 @@ function App() {
             readOnly
           />
           <button className="outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0">
-            Copy
+                Copy
           </button>
+        </div>
+        <div className="flex text-sm gap-x-2">
+          <div className="flex items-center gap-x-1">
+            <input 
+            min={6}
+            max={100}
+            value={length}
+            className="cursor-pointer"
+            type="range" />
+            <label>length : {length}</label>
+          </div>
+
         </div>
       </div>
     </>

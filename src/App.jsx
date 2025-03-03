@@ -26,8 +26,8 @@ function App() {
     if (charAllowed) str += "!@#$%^&*()_+{}:~`/|<>.,[]";
 
     // Generate the password by randomly picking characters from the character set
-    for (let i = 1; i <= length; i++) {
-      let char = Math.floor(Math.random() * str.length); // Random index
+    for (let i = 0; i <= length; i++) {
+      let char = Math.floor(Math.random() * str.length + 1); // Random index
       pass += str.charAt(char); // Append the character at the random index
     }
 
